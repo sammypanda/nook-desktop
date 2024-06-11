@@ -19,8 +19,20 @@
     <li>All K.K. songs released</li>
 </ul>
 
-<p>TODO:</p>
-<ul>
-  <li>Afford a windows certificate so there's no dodgy installation process</li>
-  <li>Afford a macOS certificate and create a macOS build</li>
-</ul>
+## TODO:
+- Afford a windows certificate so there's no dodgy installation process</li>
+- Afford a macOS certificate and create a macOS build</li>
+
+## Usage:
+### (Linux) with Flatpak
+With flatpak installed:
+```
+  flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  flatpak install camp.nook.nookdesktop
+```
+
+### (Linux) with Nix/NixOS
+To add to NixOS you can use <a href="https://github.com/sammypanda/nixos-nook-desktop">sammypanda/nixos-nook-desktop</a> as a guide, or run on the spot with:
+```
+  nix run github:sammypanda/nixos-nook-desktop
+```
